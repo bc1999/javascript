@@ -13,6 +13,18 @@ class LinkedList {
         this.length = 1;
     }
 
+    getHead(){
+        return this.head;
+    }
+
+    getTail(){
+        return this.tail;
+    }
+
+    getLength(){
+        return this.length;
+    }
+
     push(value){ // append
         const newNode = new Node(value);
         if (!this.head){
@@ -84,5 +96,8 @@ myLinkedList3.pop();
 console.log(myLinkedList3);
 console.log(myLinkedList3.pop());
 
+console.log("myLinkedList2.getHead().value: ", myLinkedList2.getHead().value)
+console.log("myLinkedList2.getTail().value: ", myLinkedList2.getTail().value)
+console.log("myLinkedList2.getLength(): ", myLinkedList2.getLength())
   
   
